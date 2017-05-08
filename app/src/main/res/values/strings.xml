@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">TriTUX</string>
+    <string name="title_activity_liste_comptes">ListeComptesActivity</string>
+</resources>

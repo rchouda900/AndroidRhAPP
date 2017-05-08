@@ -1,10 +1,11 @@
 package com.example.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.entités.Compte;
@@ -25,14 +26,12 @@ public class CompteController {
 	
 	
 	@RequestMapping (method=RequestMethod.DELETE,value="/supprimer/{login}")
-	 @ResponseBody
 	public long deleteCompte(@PathVariable(value="login") String login)
 	{
 		return compteservice.deleteCompte(login);
 	}
 	
 	@RequestMapping (method=RequestMethod.POST,value="/creer/{login}/{mdp}/{email}")
-	 @ResponseBody
 	public Compte créerCompte(@PathVariable(value="login") String login,@PathVariable(value="mdp") String mdp,@PathVariable(value="email") String email)
 	{
 		if (getCompte(login)==null)
@@ -44,10 +43,25 @@ public class CompteController {
 	}
 	
 	@RequestMapping (method=RequestMethod.PUT,value="/modifier/{login}/{mdp}")
-	 @ResponseBody
-	public int deleteCompte(@PathVariable(value="login") String login,@PathVariable(value="mdp") String mdp)
+	public int ModifierCompte(@PathVariable(value="login") String login,@PathVariable(value="mdp") String mdp)
 	{
 		return compteservice.updateMdp(login, mdp);
 	}
+
+	
+	@RequestMapping (method=RequestMethod.GET,value="/afficheremail/{email}")
+	public Compte getCompteByEmail(@PathVariable(value="email") String email)
+	{
+		return compteservice.getCompteByEmail(email);
+	}
+	
+	
+	@RequestMapping (method=RequestMethod.GET,value="/affichertous")
+	public List <Compte> getCompteAll()
+	{
+		return compteservice.getAllCompte();
+	}
+	
+	
 	
 }

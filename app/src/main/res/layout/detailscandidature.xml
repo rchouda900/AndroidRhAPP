@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+    <TextView
+        android:id="@+id/libelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:textSize="22dp"
+        android:textColor="#FFFFFF"
+        android:text="TextView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/libelle"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="27dp"
+        android:text="Date création :"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/creat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9"
+        android:layout_below="@+id/textView9"
+        android:layout_marginTop="31dp"
+        android:text="jdh"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_alignLeft="@+id/creat"
+        android:layout_alignStart="@+id/creat"
+        android:layout_below="@+id/creat"
+        android:layout_marginTop="40dp"
+        android:text="Date dernière modification :" />
+
+    <TextView
+        android:id="@+id/lastmod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView11"
+        android:layout_alignStart="@+id/textView11"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Modifié par :"
+        android:layout_below="@+id/lastmod"
+        android:textColor="#FFFFFF"
+        android:textSize="18dp"
+        android:layout_alignLeft="@+id/lastmod"
+        android:layout_alignStart="@+id/lastmod" />
+
+    <TextView
+        android:id="@+id/modifby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/lastmod"
+        android:layout_alignRight="@+id/lastmod"
+        android:layout_below="@+id/textView13"
+        android:layout_marginTop="29dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

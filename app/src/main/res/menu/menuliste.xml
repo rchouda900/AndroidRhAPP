@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/emplist"
+        android:title="Consulter la liste des employés"
+        />
+
+    <item android:id="@+id/canlist"
+        android:title="Consulter la liste des candidats"
+        />
+
+</menu>

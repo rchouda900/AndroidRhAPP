@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/login">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:background="@android:color/black" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="39dp"
+            android:background="@drawable/col1" />
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="45dp"
+            android:layout_weight="1"
+            android:text="Tests En ligne"
+            android:textColor="@android:color/background_light"
+            />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="135dp"
+            android:layout_marginLeft="39dp"
+            android:background="@drawable/col2" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="135dp"
+            android:layout_weight="1"
+            android:text="Entretien Technique"
+            android:textColor="@android:color/background_light"
+            />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="225dp"
+            android:layout_marginLeft="39dp"
+            android:background="@drawable/dot" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="225dp"
+            android:layout_weight="1"
+            android:text="Entretien Rh"
+            android:textColor="@android:color/background_light"
+            />
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="315dp"
+            android:layout_marginLeft="39dp"
+            android:background="@drawable/dot" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="315dp"
+            android:layout_weight="1"
+            android:text="Acceptation"
+            android:textColor="@android:color/background_light"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

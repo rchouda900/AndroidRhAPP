@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc.tritux.Nextpage"
+    android:background="@drawable/login">
+
+    <EditText
+        android:id="@+id/affichermotdepasse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/afficherlogin"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Mot de passe "
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#cccccc"
+        android:textColorLink="@android:color/holo_green_light"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/afficheretape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/affichermotdepasse"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Etape"
+        android:singleLine="true"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#cccccc"
+        android:textColorLink="@android:color/holo_green_light"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/afficherlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:clickable="false"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+
+        android:layout_marginTop="26dp"
+        android:drawablePadding="10dp"
+        android:hint="Login"
+        android:singleLine="true"
+        android:textAlignment="inherit"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#cccccc"
+        android:textColorLink="@android:color/holo_green_light"
+        android:textDirection="firstStrong"
+        android:textSize="20sp"
+        android:layout_below="@+id/btnsearch"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btncreercompte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        android:text=" Créer un compte"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="44dp"
+        android:layout_below="@+id/afficheretape"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/cherchermail"
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+
+        android:drawablePadding="10dp"
+        android:hint="Adresse e-mail"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textAlignment="inherit"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#cccccc"
+        android:textColorLink="@android:color/holo_green_light"
+        android:textDirection="firstStrong"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/btnsearch"
+        android:layout_alignRight="@+id/btncreercompte"
+        android:layout_alignEnd="@+id/btncreercompte" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:layout_toRightOf="@+id/cherchermail"
+        android:elevation="0dp"
+        android:text="Rechercher"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+</RelativeLayout>

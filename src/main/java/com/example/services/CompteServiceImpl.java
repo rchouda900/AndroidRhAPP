@@ -1,5 +1,7 @@
 package com.example.services;
 
+import java.util.List;
+
 import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -42,5 +44,18 @@ public class CompteServiceImpl implements CompteService{
 		return this.compteRepository.updateMdp(login, mdp);
 		
 	}
+
+	@Override
+	public Compte getCompteByEmail(String email) {
+		// TODO Auto-generated method stub
+		return this.compteRepository.findByEmail(email);
+	}
+
+	@Override
+	public List<Compte> getAllCompte() {
+		// TODO Auto-generated method stub
+		return this.compteRepository.findAll();
+	}
+
 
 }
